@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export const RecipeContext = createContext(undefined);
 
 export const RecipeProvider = ({ children }) => {
-  const [searchParam, setSearchParam] = useState("");
+  const [searchParam, setSearchParam] = useState("pizza");
   const [loading, setLoading] = useState(false);
   const [recipeList, setRecipeList] = useState([]);
   const [recipeDetailsData, setRecipeDetailsData] = useState(null);
