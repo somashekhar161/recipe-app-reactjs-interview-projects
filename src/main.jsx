@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/",
+          path: "/recipe-app-reactjs-interview-projects/",
           element: <Home />,
         },
         {
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/recipe-app-reactjs-interview-projects/" },
+  // { basename: "/recipe-app-reactjs-interview-projects/" },
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />,
