@@ -8,36 +8,36 @@ import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Details from "./pages/Details";
 import ErrorPage from "./pages/ErrorPage";
-const router = createBrowserRouter(
-  [
-    {
-      element: (
-        <RecipeProvider>
-          <App />
-        </RecipeProvider>
-      ),
-      errorElement: <ErrorPage />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/favorites",
-          element: <Favorites />,
-        },
-        {
-          path: "/details/:recipeId",
-          element: <Details />,
-        },
-      ],
-    },
-  ],
-  { basename: "/recipe-app-reactjs-interview-projects/" },
-);
+// const router = createBrowserRouter(
+//   [
+//     {
+//       element: (
+//         <RecipeProvider>
+//           <App />
+//         </RecipeProvider>
+//       ),
+//       errorElement: <ErrorPage />,
+//       children: [
+//         {
+//           path: "/",
+//           element: <Home />,
+//         },
+//         {
+//           path: "/favorites",
+//           element: <Favorites />,
+//         },
+//         {
+//           path: "/details/:recipeId",
+//           element: <Details />,
+//         },
+//       ],
+//     },
+//   ],
+//   { basename: "/recipe-app-reactjs-interview-projects/" },
+// );
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
-    <h1>{"HELLO ROUTES ERROR"}</h1>
-    <RouterProvider router={router} />
+    <h1>{"HELLO ROUTER ERROR"}</h1>
+    {/* <RouterProvider router={router} /> */}
   </div>,
 );
