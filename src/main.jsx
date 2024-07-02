@@ -36,8 +36,10 @@ import "./index.css";
 //   { basename: "/recipe-app-reactjs-interview-projects/" },
 // );
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div>
-    <h1>{"HELLO ROUTER ERROR"}</h1>
-    {/* <RouterProvider router={router} /> */}
-  </div>,
+  <React.StrictMode>
+    <div>
+      <h1>{"HELLO ROUTER ERROR"}</h1>
+      {/* <RouterProvider router={router} /> */}
+    </div>
+  </React.StrictMode>,
 );
