@@ -19,7 +19,7 @@ const router = createBrowserRouter(
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "/recipe-app-reactjs-interview-projects/",
+          path: "/",
           element: <Home />,
         },
         {
@@ -33,8 +33,11 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  // { basename: "/recipe-app-reactjs-interview-projects/" },
+  { basename: "/recipe-app-reactjs-interview-projects/" },
 );
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />,
+  <div>
+    <h1>{"HELLO ROUTES ERROR"}</h1>
+    <RouterProvider router={router} />
+  </div>,
 );
