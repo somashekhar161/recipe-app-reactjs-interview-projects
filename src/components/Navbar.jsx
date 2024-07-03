@@ -6,9 +6,12 @@ const Navbar = () => {
   const { loading, searchParam, handleSubmit, handleSearchParamChange } =
     useRecipe();
   return (
-    <header className=" fixed w-full">
+    <header className="  fixed w-full">
       <nav className=" flex flex-col  items-center justify-between gap-4 bg-gray-50 p-4 shadow md:flex-row">
-        <NavLink to={"/"} className=" text-2xl font-semibold text-gray-600">
+        <NavLink
+          to={"/"}
+          className=" ml-2 text-2xl font-semibold text-gray-600"
+        >
           Food Recipe
         </NavLink>
         <div>
